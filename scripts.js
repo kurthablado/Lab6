@@ -49,11 +49,12 @@ function recalculate() {
     - then, recalculate() the total cost.
 - finally, uncomment the following line of JavaScript to have this function run automatically whenever the pseudo-button is clicked: */
 
-switchModel.addEventListener("click", changeModel);
+
 
 // INSERT YOUR CODE HERE
 
-var switchModel = document.getElementById("model-button");
+let switchModel = document.getElementById("model-button");
+switchModel.addEventListener("click", changeModel);
 
 function changeModel() {
     let modelText = document.getElementById("model-text");
@@ -80,12 +81,11 @@ function changeModel() {
     - finally, attach this function to the "Change Duration" pseudo-button, so it runs whenever the button is clicked.
 */
 
-durationButton.addEventListener("click", changeDuration);
 
 // INSERT YOUR CODE HERE
 
-var durationButton = document.getElementById('duration-button');
-
+let durationButton = document.getElementById('duration-button');
+durationButton.addEventListener("click", changeDuration);
 
 function changeDuration() {
     let durationText = document.getElementById('duration-text');
