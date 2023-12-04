@@ -11,9 +11,9 @@ You are encouraged to use the provided naming convention for ease of review.
 
 // INSERT YOUR CODE HERE
 
-let modelName;
+let modelName = document.getElementbyID("model-text");
 
-let duration;
+let duration = document.getElementbyID("duration-text");
 
 
 /****************** helper function ******************/
