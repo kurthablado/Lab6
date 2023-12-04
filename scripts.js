@@ -11,9 +11,9 @@ You are encouraged to use the provided naming convention for ease of review.
 
 // INSERT YOUR CODE HERE
 
-let modelName = 'XYZ';
+let modelName;
 
-let duration = 1;
+let duration;
 
 
 /****************** helper function ******************/
@@ -30,7 +30,7 @@ let duration = 1;
 
 function recalculate() {
     costLabel = document.getElementById("calculated-cost");
-    if (modelName === 'XYZ') {
+    if (modelName == 'XYZ') {
         costLabel.innerHTML = duration * 100;
     } else {
         costLabel.innerHTML = duration * 213;
@@ -56,7 +56,7 @@ modelButton = document.getElementById("model-button");
 
 function changeModel() {
     modelText = document.getElementById("model-text");
-    if (modelName === "XYZ"){
+    if (modelName == "XYZ"){
         modelName.innerHTML = "CPRG";
         modelText = "Model CPRG";
     }
