@@ -11,9 +11,9 @@ You are encouraged to use the provided naming convention for ease of review.
 
 // INSERT YOUR CODE HERE
 
-let modelName = document.getElementbyID("model-text");
+let modelName = document.getElementById("model-text");
 
-let duration = document.getElementbyID("duration-text");
+let duration = document.getElementById("duration-text")
 
 
 /****************** helper function ******************/
@@ -58,11 +58,11 @@ function changeModel() {
     modelText = document.getElementById("model-text");
     if (modelName == "XYZ"){
         modelName.innerHTML = "CPRG";
-        modelText = "Model CPRG";
+        modelText.innerHTML = "Model CPRG";
     }
     else {
         modelName.innerHTML = "XYZ";
-        modelText = "Model XYZ";
+        modelText.innerHTML = "Model XYZ";
     }
     recalculate();
 }
