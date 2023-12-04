@@ -13,7 +13,7 @@ You are encouraged to use the provided naming convention for ease of review.
 
 let modelName = document.getElementById("model-text");
 
-let duration = document.getElementById("duration-text")
+let durationText = document.getElementById("duration-text")
 
 
 /****************** helper function ******************/
@@ -31,9 +31,9 @@ let duration = document.getElementById("duration-text")
 function recalculate() {
     costLabel = document.getElementById("calculated-cost");
     if (modelName == 'XYZ') {
-        costLabel.innerHTML = duration * 100;
+        costLabel.innerHTML = (durationText * 100);
     } else {
-        costLabel.innerHTML = duration * 213;
+        costLabel.innerHTML = (durationText * 213);
     }
 }
 
@@ -52,19 +52,18 @@ function recalculate() {
 
 // INSERT YOUR CODE HERE
 
-
-
 function changeModel() {
     modelText = document.getElementById("model-text");
     if (modelName == "XYZ"){
-        modelName.innerHTML = "CPRG";
+        modelName = "CPRG";
         modelText.innerHTML = "Model CPRG";
+        recalculate();
     }
     else {
-        modelName.innerHTML = "XYZ";
+        modelName = "XYZ";
         modelText.innerHTML = "Model XYZ";
+        recalculate();
     }
-    recalculate();
 }
 
 modelButton = document.getElementById("model-button");
@@ -82,8 +81,6 @@ modelButton.addEventListener("click", changeModel);
 */
 
 // INSERT YOUR CODE HERE
-
-
 
 function changeDuration() {
     let durationText = document.getElementById("duration-text");
